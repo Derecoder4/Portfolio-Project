@@ -610,18 +610,32 @@ nav .nav-right li a:hover i {
         padding-top:8rem;
     }
 
+    .info-text {
+        text-align:unset;
+        margin-left:-5rem;
+    }
+
+    .info-text1 {
+        text-align: center;
+        margin-left:-6rem;
+    }
+
     .page2 {
         margin-bottom:22rem;
+    }
+
+    .page2 a {
+        margin:0;
     }
 
     .page2 p {
         text-align: center;
         width:100%;
-        max-width:400px;
+        max-width:250px;
     }
 
     .about-me {
-        margin-top:38rem;
+        margin-top:45rem;
     }
 
     .display {
@@ -639,18 +653,18 @@ nav .nav-right li a:hover i {
     }
     
     .display > div {
-        padding:0 4rem;
+        padding:0 2rem;
         flex-direction: column;
         align-items: center;
         justify-content:center;
     }
     
     .page-1 {
-        margin-top:10rem;
+        margin-top:8rem;
     }
 
     .page-1 img {
-        width:25rem;
+        width:15rem;
         object-fit: contain;
     }
     
