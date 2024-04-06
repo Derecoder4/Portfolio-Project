@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-overlay:#343745;
+    --color-primary:#6928E6;
+    --color-secondary:#9138EF;
+    --color-success:#41f1b6;
+    --color-warning:#ffbb55;
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-light:#F7F8FE;
+    --color-dark:#212529;
+    --color-dark-variant:#555555;
+    --color-info-light:#F5F5F5;
+    --color-mute:#999999;
+
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration:none;
+    color:var(--color-black);
+}
+
+li {
+    list-style:none;
+}
+
+img {
+    width:100%;
+    object-fit: contain;
+}
+
+.container {
+    width:100%;
+    height:100vh;
+}
+
+nav {
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-block:0.5rem;
+    background-color: #fff;
+    box-shadow:0 3px 1rem #2b2b2b1f;
+}
+
+nav .logo {
+    font-size:2.3rem;
+    padding-inline-start: 1rem;
+    cursor: pointer;
+}
+
+nav .logo span {
+    color:var(--color-primary);
+}
+
+nav ul {
+    display:flex;
+}
+
+nav ul li a {
+    padding:0 1.3rem;
+    text-transform:capitalize;
+}
+
+nav .nav-right li a {
+    margin-right:2rem;
+    padding:0.8rem 1.8rem;
+    border:1px solid var(--color-mute); 
+    border-radius:1rem;
+    cursor:pointer;
+    transition:all 300ms;
+}
+
+nav ul li .active {
+    color: var(--color-primary);
+}
+
+nav .nav-right i {
+    padding-right:0.5rem;
+    transition: 300ms;
+}
+
+nav .nav-right li a:hover {
+    background:var(--color-primary);
+    color: var(--color-white);
+    border: none;
+}
+
+nav .nav-right li a:hover i {
+    color:var(--color-white)
+}
+
+.main {
+    width:100%;
+    height:90%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+}
+
+.main .content1 {
+    height:100%;
+    flex: 1;
+    display:flex;
+    align-items: center;
+}
+
+.main .content1 .info {
+    margin-left:20%;
+    margin-top:1.5rem;
+}
+
+.content1 .info .info-text {
+    margin-bottom:3rem;
+}
+
+.content1 .info .info-text h3 {
+    font-size:1.5rem;
+    color: var(--color-dark-variant);
+}
+
+.content1 .info .info-text h2 {
+    font-size:3.2rem;
+    color:var(--color-black);
+}
+
+.content1 .info .info-text p {
+    color: var(--color-dark);
+    font-size :1.1rem;
+    font-weight:500;
+}
+
+.content1 .info .info-text1 a { 
+    font-size:1.8rem;
+    color: var(--color-primary);
+    font-weight:600;
+}
+
+.content1 .info .info-text1 p {
+    font-size:1.2rem;
+    width:350px;
+}
+
+.content1 .info .info-text1 .socials {
+    margin-top:2rem;
+}
+
+.content1 .info .info-text1 .socials i {
+    font-size:1.2rem;
+    border:1px solid var(--color-dark-variant);
+    border-radius:50%;
+    width:3.2rem;
+    height:3.2rem;
+    padding:0.9rem 0;
+    margin:0 0.3rem;
+    text-align:center;
+    transition:all 400ms ease;
+}
+
+.content1 .info .info-text1 .socials i:hover {
+    transform: rotate(360deg);
+    background:var(--color-primary);
+    color: var(--color-white);
+    border:none;
+}
+
+.main .content2 {
+    flex:1;
+    right:10%;
+    height: 100%;
+    position: relative;
+}
+
+.content2 .picture {
+    width:450px;
+    height:450px;
+    position: absolute;
+    right:5%;
+    top:8%;
+    border:10px solid var(--color-white);
+    border-radius:50%;
+}
+
+.content2 .brush {
+    width:45rem;
+    mix-blend-mode: color-burn;
+    transform: rotate(-30deg);
+    z-index:-5;
+    position: absolute;
+    top:8rem;
+    right:-10%;
+    user-select: none;
+}
+
+.main .certificate__cards {
+    position:absolute;
+    bottom:3rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+    z-index: 15;
+}
+
+.main .certificate__cards .card {
+    width:260px;
+    box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.1);
+    display:flex;
+    align-items: center;
+    padding-block:0.8rem;
+    border-radius:0.3rem;
+    cursor:pointer;
+    z-index: 150000;
+}
+
+.certificate__cards .card .icons {
+    font-size: 1.1rem;
+    width:3.1rem;
+    height:3.1rem;
+    text-align:center;
+    padding:1rem 0;
+    margin:0 1rem;
+    background: #000;
+    color:var(--color-white);
+    border-radius:50%;
+}
+
+.certificate__cards .card:nth-of-type(1) .icons {
+    font-size:1.5rem;
+    padding:0.8rem 0;
+}
+
+.certificate__cards .card:nth-of-type(2) .icons {
+    background: var(--color-primary);
+}
+
+.certificate__cards .card:nth-of-type(3) .icons {
+    background:var(--color-light);
+    color: var(--color-black);
+}
+
+.certificate__cards .card {
+    padding-right: 1rem;
+}
+
+.container .about-me {
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me .content {
+    width: 100%;
+    padding:3rem;
+    display:grid;
+    grid-template-columns:700px 700px;
+    grid-template-rows:600px;
+    place-content: center;
+}
+
+.content .page-1,
+.content .page2 {
+    position: relative;
+}
+
+.page-1 img {
+    width:500px;
+    height:600px;
+    object-fit:cover;
+    position: absolute;
+    right:5rem;
+}
+
+.page2 .text {
+    display:flex;
+    align-items:center;
+    gap:0.3rem;
+}
+
+.text-content .text span {
+    width:1.5rem;
+    height:2px;
+    background:var(--color-primary);
+    border-radius:1rem;
+}
+
+.text-content h3 {
+    text-transform: capitalize;
+    font-weight:800;
+    font-size:1.6rem;
+    margin-bottom:1rem;
+}
+
+.text-content p {
+    margin-bottom: 1rem;
+}
+
+.text-content .display {
+    padding:1rem;
+    display:flex;
+    align-items: center;
+    background:var(--color-light);
+    margin-bottom:1.8rem;
+}
+
+.display > div:nth-of-type(1) {
+    padding:0;
+}
+
+.display > div:nth-of-type(2) {
+    margin-left:2.8rem;
+}
+
+.display > div {
+    padding:0 4rem;
+}
+
+.d {
+    margin-bottom:1rem;
+}
+
+.d:nth-of-type(3) {
+    margin:0;
+}
+
+.d h3 {
+    font-size:1.3rem;
+    margin:0;
+}
+
+.rating i {
+    font-size:0.8rem;
+    color: gold;
+}
+
+.page2 a {
+    padding:0.8rem 1.8rem;
+    border:1px solid var(--color-mute); 
+    border-radius:10rem;
+    cursor:pointer;
+    background:var(--color-primary);
+    color: var(--color-white);
+}
